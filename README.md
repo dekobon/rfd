@@ -5,7 +5,7 @@
 -->
 
 <!--
-    Copyright 2019 Joyent, Inc.
+    Copyright 2020 Joyent, Inc.
 -->
 
 # Requests for Discussion
@@ -60,7 +60,7 @@ formal writing that it has come to represent.)
 | draft    | [RFD 14 Signed ZFS Send](./rfd/0014/README.md) |
 | draft    | [RFD 15 Reduce/Eliminate runtime LX image customization](./rfd/0015/README.md) |
 | predraft | [RFD 16 Manta Metering](./rfd/0016/README.md) |
-| draft    | [RFD 17 Cloud Analytics v2](./rfd/0017/README.md) |
+| abandoned | ~~[RFD 17 Cloud Analytics v2](./rfd/0017/README.md)~~ |
 | publish  | [RFD 18 Support for using labels to select networks and packages](./rfd/0018/README.md) |
 | predraft | [RFD 19 Interface Drift In Workflow Modules](./rfd/0019/README.md) |
 | draft    | [RFD 20 Manta Slop-Aware Zone Scheduling](./rfd/0020/README.md) |
@@ -88,7 +88,7 @@ formal writing that it has come to represent.)
 | draft    | [RFD 42 Provide global zone pkgsrc package set](./rfd/0042/README.md) |
 | publish  | [RFD 43 Rack Aware Network Pools](./rfd/0043/README.md) |
 | predraft | [RFD 44 Create VMs with Delegated Datasets](./rfd/0044/README.md) |
-| draft    | [RFD 45 Tooling for code reviews and code standards](./rfd/0045/README.md) |
+| abandoned | ~~[RFD 45 Tooling for code reviews and code standards](./rfd/0045/README.md)~~ |
 | publish  | [RFD 46 Origin images for Triton and Manta core images](./rfd/0046/README.md) |
 | publish  | [RFD 47 Retention policy for Joyent engineering data in Manta](./rfd/0047/README.md) |
 | predraft | [RFD 48 Triton A&A Overhaul (AUTHAPI)](./rfd/0048/README.md) |
@@ -198,7 +198,7 @@ formal writing that it has come to represent.)
 | draft | [RFD 152 Rack Aware Networking](./rfd/0152/README.md) |
 | draft    | [RFD 153 Incremental metadata expansion for Manta buckets](./rfd/0153/README.md) |
 | publish  | [RFD 154 Flexible disk space for bhyve VMs](./rfd/0154/README.md) |
-| draft | [RFD 155 Manta Buckets API](./rfd/0155/README.md) |
+| publish | [RFD 155 Manta Buckets API](./rfd/0155/README.md) |
 | publish  | [RFD 156 SmartOS/Triton Boot Modernization](./rfd/0156/README.md) |
 | draft    | [RFD 157 Notices to Operators](./rfd/0157/README.md) |
 | draft | [RFD 158 NAT Reform, including public IPs for fabric-attached instances.](./rfd/0158/README.md) |
@@ -213,10 +213,19 @@ formal writing that it has come to represent.)
 | predraft | [RFD 167 Drop i386 and multiarch Package Sets](./rfd/0167/README.md) |
 | draft | [RFD 168 Bootstrapping a Manta Buckets deployment](./rfd/0168/README.md) |
 | draft | [RFD 169 Encrypted kernel crash dump](./rfd/0169/README.md) |
-| predraft | [RFD 170 Manta Picker Component](./rfd/0170/README.md) |
-| predraft | [RFD 171 A Proposal for Manta SnapLinks](./rfd/0171/README.md) |
+| draft | [RFD 170 Manta Picker Component](./rfd/0170/README.md) |
+| abandoned | ~~[RFD 171 A Proposal for Manta SnapLinks](./rfd/0171/README.md)~~ |
 | predraft | [RFD 172 CNS Aggregation](./rfd/0172/README.md) |
 | predraft | [RFD 173 KBMAPI and kbmd](./rfd/0173/README.adoc) |
+| draft | [RFD 174 Improving Manta Storage Unit Cost (iSCSI)](./rfd/0174/README.md) |
+| publish | [RFD 175 SmartOS integration process changes](./rfd/0175/README.md) |
+| predraft | [RFD 176 SmartOS boot from ZFS pool](./rfd/0176/README.md) |
+| predraft | [RFD 177 Linux Compute Node Umbrella](./rfd/0177/README.md) |
+| predraft | [RFD 178 Linux Platform Image](./rfd/0178/README.md) |
+| predraft | [RFD 179 Linux Compute Node Networking](./rfd/0179/README.md) |
+| predraft | [RFD 180 Linux Compute Node Containers](./rfd/0180/README.md) |
+| draft | [RFD 181 Improving Manta Storage Unit Cost (MinIO)](./rfd/0181/README.md) |
+| draft | [RFD 182 Altering system pool detection in SmartOS/Triton](./rfd/0182/README.md) |
 
 ## Contents of an RFD
 

@@ -1,6 +1,6 @@
 ---
 authors: Josh Wilsdon <jwilsdon@joyent.com>
-state: predraft
+state: abandoned
 discussion: https://github.com/joyent/rfd/issues/135
 ---
 
@@ -16,6 +16,10 @@ discussion: https://github.com/joyent/rfd/issues/135
 
 
 # RFD 171 A Proposal for Manta SnapLinks
+
+## Abandonment
+
+This proposal has been abandoned and only remains here for historical reasons.
 
 ## Summary
 
@@ -108,7 +112,7 @@ There is discussion in [RFD
 and [RFD 143](https://github.com/joyent/rfd/blob/master/rfd/0143/README.md)
 about SnapLinks and workarounds proposed (some of which have been made) to deal
 with the fact that SnapLinks don't work well with the [old garbage collection
-system](https://github.com/joyent/manta/blob/master/docs/operator-guide.md#garbage-collection-auditing-and-metering)
+system](https://github.com/joyent/manta/blob/mantav1/docs/operator-guide.md#garbage-collection-auditing-and-metering)
 (that uses `manta_delete_log`). There's also discussion in [this
 document](https://github.com/joyent/manta-mola/blob/master/docs/gc-design-alternatives.md)
 of problems including ["The Walking Link
@@ -484,11 +488,11 @@ While looking into the possibilities here I found that the current
 putObjectHandler has poor behavior when there are errors talking to "sharks"
 [MANTA-4286](https://jira.joyent.us/browse/MANTA-4286). If there is any error
 after data has been written to disk, it will leave garbage around on the storage
-zones that will never be cleaned up. We should having that same bug with this
-change and ensure that if we fail to create links on any of the "sharks", we add
-a `manta_fastdelete_queue` entry to cleanup the potentially partially written
-object. Since garbage collection is idempotent, this is always safe when we're
-going to return an error after we've talked to any "sharks".
+zones that will never be cleaned up. We should avoid having that same bug with
+this change and ensure that if we fail to create links on any of the "sharks",
+we add a `manta_fastdelete_queue` entry to cleanup the potentially partially
+written object. Since garbage collection is idempotent, this is always safe when
+we're going to return an error after we've talked to any "sharks".
 
 
 ## See Also
